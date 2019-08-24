@@ -2,6 +2,8 @@
 
 ### Lecture 3 - Game Engine Architecture
 
+> "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization." - Gerald Weinberg
+
 - Mapping a game engine architecture against a game architecture
 - What subsystems exist and what they do
 

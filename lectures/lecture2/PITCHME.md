@@ -2,6 +2,8 @@
 
 ### Lecture 2 - C++ Basics (Cont.)
 
+> "Fifty years of programming language research, and we end up with C++?" - Richard A. O'Keefe
+
 - Pass by _value_, _reference_ and _address_
 - Stack / heap
 - Smart pointers
