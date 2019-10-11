@@ -98,6 +98,14 @@ TODO: images
 - Computes complex post-processing effects
 - Graphics system stack (hardware -> ... -> high-level API)
 
+---
+
+#### Activity
+
+Let's explore existing open-source game engines:
+1. Find a repo on GitHub with game engine source code
+2. Identify their versions of "Game World", "Main Loop", "Render" and "Physics Tick".
+
 
 ---
 
@@ -115,7 +123,7 @@ TODO: images
 
 #### Conclusion
 
-- 
+- One architecture to rule them all, many actual implementations
 
 ---
 

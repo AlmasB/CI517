@@ -94,7 +94,7 @@ dispatcher.fireEvent(event)
 
 #### Conclusion
 
-- 
+- Event systems form a basis of many application frameworks.
 
 ---
 
