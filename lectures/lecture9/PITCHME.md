@@ -21,7 +21,8 @@
 
 #### Interpreting vs Compiling
 
-- 
+- Interpreting runs slower but no compilation times
+- Compiled runs faster but need to compile before running
 
 
 ---
@@ -30,8 +31,26 @@
 
 - 
 
+Allow updating game behaviour without changes to the engine / game source code.
+
+Allow calling engine functions from scripts.
+
+Allow user content.
 
 
+---
+
+#### Importance of Domain-specific Languages
+
+Typically a subset of a full programming language.
+
+In a script:
+
+```
+spawn("door", x, y)
+
+fire_event("...")
+```
 
 
 ---
@@ -44,10 +63,29 @@
 
 ---
 
-#### 
+#### Activity - Design a Simple DSL
 
 - 
 
+
+
+
+---
+
+#### Concepts
+
+- Lexer / tokenizer
+- Parser
+- ...
+
+
+
+
+---
+
+#### Write a Simple Parser
+
+- 
 
 
 ---
@@ -58,21 +96,12 @@
 
 
 
-
 ---
 
-#### 
+#### s
 
 - 
 
-
-
-
----
-
-#### 
-
-- 
 
 
 ---

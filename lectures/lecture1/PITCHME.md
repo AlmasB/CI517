@@ -179,14 +179,13 @@ Strongly recommended:
 - 100% of the marks
 - Details on StudentCentral
 
-Expectations from you at L5 higher than at L4 + attendance is important. 4-6 hours of independent study each week
+Expectations from you at L5 higher than at L4. Attendance is important. 4-6 hours of independent study each week
 
 ---
 
 #### Demo time
 
-TODO: update
-- [StarshipFontana](https://github.com/AlmasB/StarshipFontana)
+- [XCube2D](https://github.com/AlmasB/xcube2d)
 
 ---
 

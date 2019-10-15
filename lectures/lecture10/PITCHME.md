@@ -11,7 +11,7 @@
 
 #### Last Week Recap
 
-- 
+- Scripting and domain-specific languages
 
 
 
@@ -29,18 +29,28 @@
 
 #### Quick-time events (impl)
 
-- 
-
-
+- Check for input
+- Design a sequence of input events and check
 
 
 
 
 ---
 
-#### 
+#### Quest Management System
 
-- 
+Activity: how can we design a data structure for quests? 
+
+Think about serialization. Can we specify quests using external data formats, e.g. json.
+
+
+
+
+---
+
+#### In-game Tutorials
+
+- Activity: design a simple tutorial for an RPG, such as Skyrim. Think in terms of data structures you designed.
 
 
 
