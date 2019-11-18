@@ -58,9 +58,7 @@ Communicating with a module that you don't know anything about.
 
 ---
 
-#### Event Systems (Game engine example)
-
-Activity:
+#### Activity (Game engine example)
 
 Suppose we have a physics engine and an audio engine. Collisions occur in the physics engine, whereas the sound effects are in the audio engine.
 
@@ -68,9 +66,7 @@ Using an example earlier, construct a solution to the above problem.
 
 ---
 
-#### Event Systems (High-level Design)
-
-Activity:
+#### Activity (High-level Design)
 
 There are three concepts. How are they related? Can we create a schematic diagram of the relationship between them?
 
@@ -89,8 +85,67 @@ dispatcher.fireEvent(event)
 
 ```
 
+---
 
+#### Timers
 
+A timer is essentially an interval-based event dispatcher with infinite events.
+
+Timers typically drive the main loop.
+
+---
+
+#### Timers
+
+An example timer that runs at ~60 fps.
+
+```
+timer.addAction(mainLoop, Duration.millis(16));
+```
+
+---
+
+#### Delayed Events
+
+Sometimes, we want to handle events at a later time. Consider an in-game explosive with a timer.
+
+---
+
+#### Delayed Events (Example)
+
+```
+timer.addDelayedAction(fireEvent, Duration.seconds(3));
+```
+
+---
+
+#### Targeted Events
+
+Some events may want to target specific game objects. For example, `Open Door` event.
+
+---
+
+#### Cancellable Events
+
+Sometimes, the event source (or target) may not exist when the time is up. For example, an enemy that gets killed before their weapon is charged.
+
+---
+
+#### Impact on Gameplay
+
+Consider, a potion effect that speeds up the character. The `onStartEffect` event allows setting the speed to a higher value, then the `onEndEffect` allows setting the value to normal.
+
+---
+
+#### Impact on Immersion
+
+Events allow handling of specific scenarios for immersive gameplay. For example, a follower NPC who tells a joke based on the weapon the player has just equipped. The event would be: `onWeaponEquipped(weapon, character)`.
+
+---
+
+#### Activity
+
+Find an event type of interest at [Skyrim Creation Kit events](https://www.creationkit.com/index.php?title=Category:Events). Explain how the event works to a person next to you.
 
 
 ---
