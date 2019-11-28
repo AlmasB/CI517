@@ -12,10 +12,7 @@
 
 #### Last Week Recap
 
-- Audio
-
-
-
+- AI
 
 ---
 
