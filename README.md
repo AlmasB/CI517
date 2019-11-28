@@ -26,3 +26,18 @@ Learning material for the Game Engine Fundamentals module at the University of B
 11. External tool integration (how do we benefit from supporting external tools? how can we add support for external tools?)
 
 12. Conclusion / recap
+
+## Final
+
+1. Introduction and overview (Pong)
+2. C++ recap (Breakout, Space Invaders)
+3. Game engine architecture (Unreal, Unity)
+4. Application framework (Godot, FXGL)
+5. Entity-Component System (Overwatch, Minecraft)
+6. Game Physics and Maths (Arx Fatalis, Sony PS3, Valve games)
+7. Graphics and audio (Star Wars Jedi Academy, Metal Gear Solid 5, Telltale games)
+8. AI (F.E.A.R, Assassin's Creed)
+9. Scripting (TESV Skyrim)
+10. Achievements and gameplay (Dragon Age Inquisition)
+11. Tool integration (Tiled, 3ds max)
+12. Conclusion
