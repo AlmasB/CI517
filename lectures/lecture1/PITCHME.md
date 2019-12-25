@@ -140,7 +140,7 @@ Main topics + games / tech that act as case studies for the topics.
 #### Audio subsystem (Telltale games)
 
 - how do we store sound effects and music?
-- how we can play these stored audio files? 
+- how can we play these stored audio files? 
 - how can we implement positional sound?
 
 ---
