@@ -1,3 +1,5 @@
+% Final draft
+
 ---
 
 ### Lecture 2 - C++ Basics (Cont.)
@@ -15,6 +17,8 @@
 
 - C++ Basics
 
+Meanwhile, please start loading VS 2017+.
+
 ---
 
 #### Memory
@@ -29,18 +33,18 @@ We can view the memory structure as a 1-dimensional array of bytes:
 
 #### Program Memory
 
-The OS allocates a program some RAM to hold data / code and keep track of the execution.
+The OS allocates a program some RAM to hold data and code and keep track of the execution.
 
 - **Heap**: a block of memory that we can allocate for use
-- **Stack**: the LIFO structure on which local variables are stored
+- **Stack**: the LIFO structure in which local variables are stored
 
 ---
 
 #### Managed vs unmanaged languages
 
-- Managed languages like Java allow the programmer to focus on the task at hand
+- Managed languages like Java allow the programmer to focus on the task at hand and forget about memory
+- But, difficult to talk to hardware without explicit control of memory structure
 - Unmanaged languages like C++ give the programmer total control over the memory allocated to your program
-- Difficult to talk to hardware without explicit control of memory structure
 
 ---
 
@@ -53,12 +57,18 @@ int i = 0;
 Point2 p(0, 0);
 ```
 
-On the heap:
+On the heap (note, raw pointer):
 
 ```
 int * i = new int;
 Point2 * p = new Point2(0, 0);
 ```
+
+---
+
+#### Activity - Space Invaders / Breakout code
+
+Let's examine some memory allocations in Java and in C++.
 
 ---
 
@@ -98,8 +108,8 @@ int b = 4;
 add(a, b);
 ```
 
-- Arguments are copied into the function, hence `a` and `b` are not modified.
-- Copying can affect performance
+- Arguments are copied into the function, hence `a` and `b` cannot be modified.
+- Copying can affect performance but passing primitives is fine
 
 ---
 
@@ -141,9 +151,21 @@ add(&a, &b);
 
 ---
 
+#### Activity
+
+Find some code in the assignment codebase that passes arguments:
+
+1. by copy
+2. by reference
+3. by raw pointer
+
+---
+
 #### Returning values
 
-- Values can also be returned from a function by value, reference or address.
+As if the above wasn't enough ...
+
+Values can also be returned from a function by value, reference or address.
 
 ```
 int add() {
@@ -178,6 +200,8 @@ i = nullptr;
 ---
 
 #### Java vs C++ (NOT equivalent!)
+
+Java garbage collection (GC) is not the same as memory deallocation in C++.
 
 ```
 Point2 p = new Point2(0, 0);
@@ -278,27 +302,27 @@ int main() {
 
 #### Dealing with Legacy Code
 
-- Many C/C++ still use raw pointers (`*`)
+- Many C/C++ programs still use (sometimes necessarily) raw pointers (`*`)
 - Possible to write a “wrapper” around legacy code
 
 ---
 
 #### Demo Time
 
-Assignment code that uses smart pointers
+Assignment code uses smart pointers, let's examine them.
 
 ---
 
 #### Summary
 
-- Smart pointers are smart
-- Smart pointers simplify the object life-cycle, i.e. object lifetime now matches syntactic scope
+- Smart pointers are _smart_ :)
+- They simplify the object life-cycle -- less worrying about memory leaks
 
 ---
 
-#### Case Study Task
+#### Case Study (Activity)
 
-Design and implement a scoreboard
+Design and implement a scoreboard.
 
 ---
 
@@ -323,13 +347,13 @@ In Java this would just be `Scoreboard.java`
 
 A scoreboard has a score. What is `score`?
 
-Is it a piece of text (“hello”), an integer (3), a real number (5.14)?
+Is it a piece of text (“hello”), an integer (3), a real number (5.14) or some other type?
 
 ---
 
 #### Implications of Class Design
 
-- If we use an integer then we can’t use 0.5. Is there a game that uses fractions for score?
+- If we use an integer then we can’t use, say 0.5. Is there a game that uses fractions for score?
 - If we use a real number then you might run into rounding errors.
 
 ---
@@ -370,7 +394,7 @@ void Scoreboard::increment(int x) {
 
 #### Use Scoreboard
 
-`main.cpp`
+The `main.cpp` file:
 
 ```
 #include <iostream>
@@ -385,15 +409,17 @@ int main() {
 
 ---
 
-#### Question
+#### Activity
 
 What is missing from Scoreboard functionality?
+
+Have a go at implementing this missing functionality.
 
 ---
 
 #### Demo Time
 
-Assignment code that uses custom classes
+Assignment code: let's check out custom classes.
 
 ---
 
@@ -401,7 +427,7 @@ Assignment code that uses custom classes
 
 - The syntax of C++ classes differs from Java
 - The semantics of C++ classes is very similar to Java
-- Using classes is straightforward
+- Using classes is reasonably straightforward
 
 ---
 
