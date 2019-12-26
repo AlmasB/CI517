@@ -192,7 +192,7 @@ For example:
 
 #### Engine Subsystems
 
-This is a brief overview, next weeks will focus on one subsystem in more detail.
+This is a brief overview, next weeks each will focus on one subsystem in more detail.
 
 ---
 
