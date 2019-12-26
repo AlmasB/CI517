@@ -1,3 +1,5 @@
+% Final draft
+
 ---
 
 ### Lecture 3 - Game Engine Architecture
@@ -15,73 +17,23 @@
 
 ---
 
-#### Game Engines
-
-- Different view / workflows, 
-- Architecture-wise, if we look generally, it is similar
-
-
----
-
-#### Game Engines (Unity)
-
-TODO: image
-
----
-
-#### Game Engines (Unreal)
-
-TODO: image
-
----
-
-#### Game Engines (Godot)
-
-TODO: image
-
----
-
-#### Game Engines (FXGL)
-
-TODO: image
-
-
----
-
-#### Game Engine Architecture
-
-other images arch from game engine arch book
-
-
----
-
 #### Game Architecture
+
+Let's start with something you know, i.e. game arch.
 
 - Start
 - Init
-- Loop: Input, Update, Render
+- Loop
 - Destroy
 - Exit
 
 ---
 
-#### Game Engine Architecture
-
-- Start
-- Init (graphics, audio, background threads, asset manager, event system, etc.)
-- Loop: (update engine timer)
-- Destroy (cleanup)
-- Exit
-
-
----
-
 #### Game Architecture (Start)
 
-- Sanity check the system, e.g. graphics, audio, window
+- What is the entry point of a C++ program? What about Java?
 - Take control from the environment
-- What is the entry point of any piece of software?
-
+- Sanity check the system, e.g. graphics, audio, window
 
 ---
 
@@ -89,6 +41,158 @@ other images arch from game engine arch book
 
 - Load assets and data
 - Show load screen or main menu
+
+---
+
+#### Game Architecture (Loop)
+
+- Take input from player
+- Update world based on input
+- Render world
+- Repeat ...
+
+---
+
+#### Game Architecture (Destroy)
+
+- Dispose of any accessed resources
+
+---
+
+#### Game Architecture (Exit)
+
+- Give control back to the environment
+
+---
+
+#### Game Engine Architecture
+
+Many interconnected subsystems, but if well-designed they form a powerful framework.
+
+Image from Game Engine Architecture (get the book from the library!)
+
+![game_engine_arch](../../images/game_engine_arch.png)
+
+
+---
+
+#### Game Engines
+
+- Different view / workflows, 
+- Architecture-wise, if we look generally, it is similar
+
+---
+
+#### Game Engines (Unity Project Structure)
+
+
+```
+Assets/
+    Scenes/
+    Prefabs/
+    Scripts/
+    Materials/
+    ...
+```
+
+---
+
+#### Unity
+
+![unity](../../images/unity.png)
+
+---
+
+#### Game Engines (Unreal Project Structure)
+
+```
+Content/
+    Blueprints/
+    Maps/
+    Materials/
+    Particles/
+    Textures/
+    ...
+```
+
+---
+
+#### Unreal
+
+![ue](../../images/ue.jpg)
+
+---
+
+#### Game Engines (Godot Project Structure)
+
+```
+Game/
+    Maps/
+    Tiles/
+    Objects/
+    Scripts/
+    Music/
+    Sounds/
+    Images/
+    ...
+```
+
+---
+
+#### Unreal
+
+![godot](../../images/godot.png)
+
+---
+
+#### Game Engines (FXGL Project Structure)
+
+```
+assets/
+    textures/
+    music/
+    sounds/
+    scripts/
+    level/
+    ...
+```
+
+---
+
+#### FXGL
+
+![fxgl](../../images/fxgl.jpg)
+
+
+---
+
+#### Game Engine Architecture
+
+Overall, looks _very_ similar to game architecture!
+
+- Start (sanity check)
+- Init (graphics, audio, background threads, asset manager, event system, etc.)
+- Loop: (update engine timer)
+- Destroy (cleanup)
+- Exit
+
+---
+
+#### Activity
+
+Let's explore existing open-source game engines:
+1. Find a repo on GitHub with game engine source code
+2. Identify their versions of the entry point (start / main)
+
+For example:
+- [Godot](https://github.com/godotengine/godot)
+- [CRYENGINE](https://github.com/CRYTEK/CRYENGINE)
+
+---
+
+#### Engine Subsystems
+
+This is a brief overview, next weeks will focus on one subsystem in more detail.
 
 ---
 
@@ -105,7 +209,6 @@ other images arch from game engine arch book
 - Simulate (fake) physics
 - Detect collisions
 
-
 ---
 
 #### Graphics Subsystem
@@ -113,14 +216,6 @@ other images arch from game engine arch book
 - Draws objects (entities + UI) to the screen
 - Computes complex post-processing effects
 - Graphics system stack (hardware -> ... -> high-level API)
-
----
-
-#### Activity
-
-Let's explore existing open-source game engines:
-1. Find a repo on GitHub with game engine source code
-2. Identify their versions of "Game World", "Main Loop", "Render" and "Physics Tick".
 
 ---
 
@@ -153,6 +248,18 @@ Let's explore existing open-source game engines:
 - Provide simple objects for manipulation
 - Complex animations with interpolations
 - Front-end validation
+
+---
+
+#### Activity
+
+Let's explore existing open-source game engines:
+1. Find a repo on GitHub with game engine source code
+2. Identify their versions of "Game World", "Main Loop", "Render" and "Physics Tick".
+
+For example:
+- [FXGL](https://github.com/AlmasB/FXGL)
+- [Godot](https://github.com/godotengine/godot)
 
 ---
 
@@ -198,13 +305,13 @@ Let's explore existing open-source game engines:
 - Allow easy engine extensions (user content)
 - Reduces compilation times
 
-
 ---
 
 #### Activity
 
-Consider a game of your choice (examples: Minecraft, TESV Skyrim, etc.) and in pseudo code / script
-construct a plugin that implements a new gameplay element.
+Order and justify the following steps of the main loop:
+
+updateAI, checkInput, notifyCollisions, renderGame, handleInput, clearRender, checkCollisions, renderUI.
 
 ---
 

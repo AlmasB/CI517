@@ -41,3 +41,17 @@ Learning material for the Game Engine Fundamentals module at the University of B
 10. Achievements and gameplay (Dragon Age Inquisition)
 11. Tool integration (Tiled, 3ds max)
 12. Conclusion
+
+## Session Structure
+
+Time | Action
+0-5 | Setup
+5-10 | Introduction
+10-25 | Point 1
+25-30 | Break
+30-35 | Activity
+35-50 | Point 2
+50-55 | Break
+55-60 | Conclusion
+
+Repeat for session 2

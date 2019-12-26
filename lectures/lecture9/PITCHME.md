@@ -87,9 +87,10 @@ fire_event("...")
 
 ---
 
-#### 
+#### Activity
 
-- 
+Consider a game of your choice (examples: Minecraft, TESV Skyrim, etc.) and in pseudo code,
+construct a script that implements a new gameplay element.
 
 
 

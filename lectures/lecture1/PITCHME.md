@@ -25,7 +25,8 @@
 #### Structure
 
 - 2hrs lecture + 2hrs tutorials per week
-- "C++" is just a tool, "game development" is theory
+- "C++" is just a tool, "game engine development" is theory
+- As a result, you will be able to understand / use any game engine
 - Unlike previous modules, this one covers low-level concepts and their high-level applications
 
 ---
@@ -69,7 +70,7 @@
 #### Content - Language & API
 
 - C++ 14+
-- [SDL 2](https://www.libsdl.org/)
+- [SDL 2](https://www.libsdl.org/) (users include Valve and Unreal Engine)
 
 Beware online resources/tutorials that use old C++ or SDL 1
 
