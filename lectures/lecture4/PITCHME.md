@@ -32,7 +32,7 @@ Game Engine Architecture and subsystems
 
 - Event
 - Listener / handler / subscriber
-- Manager / dispatcher
+- Manager / dispatcher / bus
 
 ---
 
@@ -56,22 +56,28 @@ The (potentially single) party that fires events and notifies interested parties
 
 #### Event Systems (Whiteboard example)
 
-Communicating with a module that you don't know anything about.
+Communicating with a module that you don't know anything about. Possibly a non-existent module even.
+
+---
+
+#### Events (High-level Design)
+
+There are three concepts. How are they related? Can we create a schematic diagram of the relationship between them?
 
 ---
 
 #### Activity (Game engine example)
 
-Suppose we have a physics engine and an audio engine. Collisions occur in the physics engine, whereas the sound effects are in the audio engine.
+Using the [FXGL codebase](https://github.com/AlmasB/FXGL):
 
-Using an example earlier, construct a solution to the above problem.
+1. identify the module (directory on GitHub) that deals with **events** (`<-` big hint).
+2. identify the class(es) / method(s) that relate to the three concepts (event, handler, bus).
 
 ---
 
-#### Activity (High-level Design)
+#### Usage (Whiteboard example)
 
-There are three concepts. How are they related? Can we create a schematic diagram of the relationship between them?
-
+Let's consider how to use these three concepts more concretely. Example use cases from the audience.
 
 ---
 
@@ -86,6 +92,14 @@ var event = Event(EventType.PLAYER_DIED)
 dispatcher.fireEvent(event)
 
 ```
+
+---
+
+#### Activity (Game engine example)
+
+Suppose we have a physics engine and an audio engine. Collisions occur in the physics engine, whereas the sound effects are in the audio engine.
+
+Using an example earlier, construct a solution to the above problem.
 
 ---
 
@@ -130,6 +144,21 @@ Some events may want to target specific game objects. For example, `Open Door` e
 #### Cancellable Events
 
 Sometimes, the event source (or target) may not exist when the time is up. For example, an enemy that gets killed before their weapon is charged.
+
+---
+
+#### Activity
+
+Using the assignment codebase:
+
+1. identify the timer (or alternative) that drives the main loop.
+2. identify how events are being fired / handled.
+
+---
+
+#### Event Serialization
+
+Events should be easily serializable. This allows easy save data generation, including game object behaviour.
 
 ---
 
