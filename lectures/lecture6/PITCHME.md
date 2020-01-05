@@ -1,3 +1,5 @@
+% Final draft
+
 ---
 
 ### Lecture 6 - Physics Subsystem
@@ -6,7 +8,7 @@
 
 - Vector maths
 - Game object interaction
-- Physics rules
+- Physics rules: mostly fake
 - Approximations / performance
 
 
@@ -21,7 +23,7 @@
 #### Objective
 
 - Mainly to give you a bit of taste for physics breadth in game dev
-- Don't worry if you don't understand *all* of it
+- Don't worry if you don't understand *all* of it: awareness is the key
 - The engine takes care of most things for us ... oh, wait a minute!
 
 ---
@@ -38,6 +40,7 @@
 
 - Luckily, not very complex
 - Transtive skills from / to UI design
+- Examples to consider: Arx Fatalis, Sony PS3, Valve games
 
 ---
 
@@ -65,6 +68,13 @@
 
 ---
 
+#### Activity
+
+1. Construct a 4D point, where 4th component is time.
+2. Can you design a game where a 4D point is used in gameplay?
+
+---
+
 #### Vector
 
 - Ordered pair: (x, y) - yes, same as point
@@ -80,6 +90,12 @@
 - Direction of an object
 - Force / speed via length
 - Angle representation
+
+---
+
+#### Activity
+
+Identify which part of [ArxLibertatis](https://github.com/arx/ArxLibertatis) code handles random vectors.
 
 ---
 
@@ -107,15 +123,21 @@
 
 ---
 
-#### Applying Concepts
+#### Activity
 
-- Demo of a moving object
-- Demo with acceleration
-- Demo with gravity
+1. Create (on paper or in code) a moving animation using point and vector concepts.
+2. Apply acceleration
+3. Apply gravity
 
 ---
 
-#### Representing Game Objects
+#### Interpolations (Demo)
+
+Changing the rate of change. Only a demo in this lecture, the concepts will be covered later.
+
+---
+
+#### Physics - Representing Game Objects
 
 - Objects have dimensions, e.g. width, height, depth
 - Objects have an _anchor_ (position)
@@ -210,10 +232,10 @@ Identify which part of the [FXGL](https://github.com/AlmasB/FXGL) code base perf
 
 ---
 
-#### Applying Concepts
+#### Activity
 
-- Demo AABB
-- Demo SAT
+1. Add two entities to your game demo and make them collide.
+2. Handle collision by printing "Collision" to console or similar.
 
 ---
 
@@ -239,7 +261,7 @@ addHandler(type1, type2, (obj1, obj2) -> {
 
 #### Conclusion
 
-- Physics, same as maths, very important for games
+- Physics and maths are very important for games
 - Don't have to get exactly right
 - Cheap and cheerful algorithms exist
 

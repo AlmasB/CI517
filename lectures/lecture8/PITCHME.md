@@ -4,8 +4,8 @@
 
 > "A computer lets you make more mistakes faster than any invention in human history." - Mitch Radcliffe
 
-- dd
-- dd
+- Pathfinding
+- Behaviour
 
 ---
 
@@ -73,6 +73,12 @@ Examine the provided code base regarding maze generation. How would you solve th
 
 ---
 
+#### Behaviour
+
+The aim is to make AI controlled entities just smart enough to make them engaging and just dumb enough to make the player seem better (smarter, stronger, etc.).
+
+---
+
 #### Various AI Behaviour Types
 
 - FSM (Finite State Machine)
@@ -86,6 +92,12 @@ Examine the provided code base regarding maze generation. How would you solve th
 
 - Can only be in 1 state at a time
 - Works for most simple AI
+
+---
+
+#### Activity
+
+Design and implement a two-state FSM for your player. Examples: walk / fly, run / swim, active / passive.
 
 ---
 
@@ -121,7 +133,9 @@ Examine the provided code base regarding maze generation. How would you solve th
 
 #### Activity
 
-Design and implement a two-state FSM for your player.
+1. Think of an existing game, such as Fallout 4 and pick an AI type.
+2. What is the aim of the AI you picked?
+3. Design the AI you picked using of the behaviour types above.
 
 ---
 
