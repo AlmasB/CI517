@@ -1,3 +1,5 @@
+% Final draft
+
 ---
 
 ### Lecture 7 - Graphics and Audio subsystems
@@ -26,7 +28,7 @@
 
 #### Screen Modes
 
-- Full screen (Exlusive)
+- Full screen (Exclusive)
 - Windowed
 - Borderless
 
@@ -36,13 +38,6 @@
 
 - Immediate
 - Retained
-
---- 
-
-#### RGBA colors
-
-- Values range
-- Alpha opacity / transparency
 
 --- 
 
@@ -63,13 +58,6 @@
 
 --- 
 
-#### Ambient Occlusion
-
-- Shadows created by objects blocking ambient light
-- Screen Space Ambient Occlusion (SSAO) method (by Crytek) uses only the depth (Z) buffer
-
---- 
-
 #### Physics-based Rendering
 
 - Attempt to imitate how light flow works in real world.
@@ -77,10 +65,40 @@
 
 --- 
 
+#### Activity
+
+1. Pick a game you've played recently
+2. Recall what graphics settings the game offered
+3. Explain in own words what each setting does
+
+We will consider some of the common ones.
+
+--- 
+
+#### Ambient Occlusion
+
+- Shadows created by objects blocking ambient light
+- Screen Space Ambient Occlusion (SSAO) method (by Crytek) uses only the depth (Z) buffer
+
+--- 
+
 #### Post-processing
 
 - Bloom, Lens Flare, Vignette
 - Blending
+
+--- 
+
+#### RGBA colors and Blending
+
+- Values range
+- Alpha opacity / transparency
+
+--- 
+
+#### Blending Demo
+
+We consider a range of blending modes.
 
 --- 
 
@@ -99,7 +117,6 @@
 - Trilinear
 - Anisotropic
 
-
 --- 
 
 #### Particle Effects
@@ -111,7 +128,29 @@
 
 #### Particle Effects Impl
 
-Demo
+Let's implement a simple particle subsystem!
+
+--- 
+
+#### Interpolators
+
+- Known as easing / tweening
+- Affect the rate of change
+- Examples include: linear, exponential, elastic, etc.
+
+--- 
+
+#### Interpolators Theory
+
+- Given a time value in range `[0..1]`, an interpolator converts it to a progress value `[0..1]`.
+- Essentially, can be represented as a function
+
+---
+
+#### Activity
+
+1. In [fxgl-animation](https://github.com/AlmasB/FXGL/tree/master/fxgl-animation) module, identify various `interpolator` implementations.
+2. Implement (e.g. on paper) your own custom interpolator (function).
 
 --- 
 
@@ -119,7 +158,7 @@ Demo
 
 - Drawn in the orthographic view (typically) 
 - Provides information about the game / player state
-- Includes aesthetically pleasing visual effects (animations)
+- Includes aesthetically pleasing visual effects (animations using interpolators)
 
 --- 
 
@@ -129,6 +168,7 @@ Demo
 - The button, when clicked, should perform _some_ action.
 - (extra) Draw some text for the button.
 - (extra) Pressed / unpressed modes, so the user sees when clicked.
+- (extra) Animate the button using your interpolator.
 
 ---
 
@@ -190,10 +230,11 @@ Using balance and volume of the speakers you can play positional sound.
 
 ---
 
-####  Positional Sound Impl
+####  Positional Sound Theory
 
-Demo using FXGL code.
-
+1. Identify the direction
+2. Compute the distance
+3. What next?
 
 ---
 

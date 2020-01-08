@@ -1,3 +1,5 @@
+% Final draft
+
 ---
 
 ### Lecture 8 - AI subsystem
@@ -64,7 +66,6 @@ let path = A*.apply(graph, startTile, endTile);
 
 `path` contains a list of tiles, which is the shortest route from `startTile` to `endTile`.
 
-
 ---
 
 #### Activity
@@ -95,6 +96,19 @@ The aim is to make AI controlled entities just smart enough to make them engagin
 
 ---
 
+#### FSM Impl
+
+```
+stateMachine.currentState.update();
+
+stateMachine.currentState = State.RUN;
+stateMachine.currentState = State.WALK;
+```
+
+Each state has its own `update()` function to implement.
+
+---
+
 #### Activity
 
 Design and implement a two-state FSM for your player. Examples: walk / fly, run / swim, active / passive.
@@ -109,18 +123,104 @@ Design and implement a two-state FSM for your player. Examples: walk / fly, run 
 
 ---
 
+#### BTrees Theory
+
+1. Start with simple (possibly atomic) actions: move, shoot, throw grenade, pick up weapon, etc.
+2. Identify the order in which to complete them.
+3. See if there are any conditions associated with an action. For example, to shoot an entity, the entity must be in sight.
+
+---
+
+#### Simple Example
+
+```
+root
+    move
+    shoot
+    move
+    throw grenade
+```
+
+---
+
+#### Decorators
+
+They act like if statements and allow adding conditions to actions.
+
+---
+
+#### More Complex Example
+
+```
+root
+    selector
+        sequence
+            move
+            shoot
+        sequence
+            move
+            throw grenade
+```
+
+The AI tries to move and shoot, if it fails (e.g. no ammo), then tries to move and throw a grenade.
+
+---
+
+#### Pac-man Demo
+
+Let's examine some example btrees in a [pac-man](https://github.com/AlmasB/FXGLGames) demo.
+
+---
+
 #### GOAP (F.E.A.R)
 
 - Define actions (like BTree) but do not specify order, i.e. dynamic
 - Use game world queries to determine its state
-- Build a chain of actions that will lead AI to the "best" world state
+- Build a chain of actions that will lead AI to the "best" world state for AI
+
+---
+
+#### GOAP Example
+
+```
+Action: Shoot Player
+Precondition: Ammo in weapon, player visible
+Postcondition: Player dead
+
+Action: Pick Up Ammo
+Precondition: no ammo
+Postcondition: Ammo in weapon
+
+```
+
+---
+
+#### GOAP Theory
+
+1. Convert each action into a graph node
+2. Add edges between nodes if postcondition matches precondition
+3. Compute shortest path from initial state to goal state
+4. (Optional) Can add weights to edges to make the AI seem more effective
 
 ---
 
 #### Squad AI
 
-- Game world queries (identify valid position, filter out rest based on e.g. threat)
-- Squad "center of mass" (dynamic)
+- AI seem to communicate between units
+- Much more dynamic / non-deterministic experience
+- Squad "center of mass" 
+
+---
+
+#### Squad AI Theory
+
+Suppose a squad is being fired at.
+
+1. Identify valid positions for cover (search space).
+2. Add each position a weight based on threat level.
+3. Compute `n` "best" positions, where `n` is number of AI units.
+4. Assign each position to a unique unit.
+5. (Optional) Can give better positions to more valuable units.
 
 ---
 
@@ -135,7 +235,7 @@ Design and implement a two-state FSM for your player. Examples: walk / fly, run 
 
 1. Think of an existing game, such as Fallout 4 and pick an AI type.
 2. What is the aim of the AI you picked?
-3. Design the AI you picked using of the behaviour types above.
+3. Design the AI you picked using the behaviour types above.
 
 ---
 
@@ -144,6 +244,12 @@ Design and implement a two-state FSM for your player. Examples: walk / fly, run 
 - Many AI algorithms already exist
 - Find a way to translate your problem to one that's been solved
 - Important to "contain" AI, as it can overwhelm the player
+
+---
+
+#### Extra Reading
+
+Good explanation of btrees - [gdxAI](https://github.com/libgdx/gdx-ai/wiki/Behavior-Trees)
 
 ---
 
