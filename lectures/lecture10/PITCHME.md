@@ -1,3 +1,5 @@
+% final draft
+
 ---
 
 ### Lecture 10 - Achievements and Gameplay
@@ -15,33 +17,71 @@
 
 ---
 
-#### Why achievement?
+#### Why Achievements?
 
-- Gamification -> keeps players engaged with repetitive tasks
+- Gamification: research shows that gamification can keep players engaged with repetitive tasks
 
----
-
-#### Quick-time events (impl)
-
-- Check for input
-- Design a sequence of input events and check
-
+This can include achievements, badges, trophies, levelling up, more powerful items, etc. Borderlands series is a good example. Various Maths tricks used in RPGs can also help.
 
 ---
 
-#### Quest Management System
+#### Quests
 
-Activity: how can we design a data structure for quests? 
+Quest systems typically utilise a form of gamification where the player is generously rewarded upon completing a quest.
 
-Think about serialization. Can we specify quests using external data formats, e.g. json.
+---
 
+#### Quest Design Demo
+
+Let's design a quest for Skyrim.
+
+Consider: NPCs, rewards, story. Group into teams?
+
+---
+
+#### Activity
+
+Quest Management System using the quest we designed.
+
+1. How can we design a data structure for storing quests as external data? What do we need to store?
+2. Think about serialization. Can we specify quests using external data formats, e.g. json.
+
+---
+
+#### Quick-time Events
+
+Commonly used to create an exciting action sequence with dynamic camera movement, possibly altering main gameplay.
+
+---
+
+#### Quick-time Events (Impl)
+
+1. Check for input
+2. Design a sequence of input events and check input matches
+
+```
+sequence = { Key.W, Key.D, Key.W, Key.S }
+
+for (key : sequence) {
+    if (key != input_key) {
+        break;
+    }
+}
+```
 
 ---
 
 #### In-game Tutorials
 
-- Activity: design a simple tutorial for an RPG, such as Skyrim. Think in terms of data structures you designed.
+- Help the player learn the game
+- Needs to be designed carefully to avoid bombarding with new knowledge
 
+---
+
+#### Activity
+
+1. In-game Tutorials: design a simple tutorial for an RPG, such as Skyrim. What will you be teaching the player?
+2. Think in terms of data structures you designed. How are you going to store the tutorial as external data.
 
 ---
 
@@ -50,12 +90,7 @@ Think about serialization. Can we specify quests using external data formats, e.
 - Players like progress in any form but especially numerical
 - Hero level, hit points, currency, number of items, etc.
 - Mechanic: dice roll, combat maths, economics
-
----
-
-#### All About Numbers
-
-- Think about your game and come up with one example
+- Any other examples?
 
 ---
 
@@ -122,21 +157,17 @@ player learns new power, player wins, state is now good
 
 ---
 
-#### Activity / Interactive
+#### Activity
 
-Find a game that you like,
-consider why you like it.
-Can you implement a particular gameplay feature
-in your game?
+1. Find a game that you like, consider why you like it.
+2. Can you implement a particular gameplay feature in your game?
 
 ---
 
 #### Conclusion
 
-Gameplay is at the same time the easiest and the hardest aspect
-of the game being developed.
-Standard practices exist.
-
+- Gameplay is at the same time the easiest and the hardest aspect of the game being developed. 
+- Standard practices exist.
 
 ---
 
