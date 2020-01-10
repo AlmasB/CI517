@@ -142,4 +142,4 @@ Standard practices exist.
 
 #### Tutorial
 
-On StudentCentral
+Assignment work

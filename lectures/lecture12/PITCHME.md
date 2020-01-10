@@ -45,10 +45,16 @@
 
 #### Conclusion
 
+- We have covered game engine fundamentals - a millimetre tip of the surface of the top layer of the iceberg
 - 
 
 ---
 
-#### Tutorial
+#### Next Week
 
-On StudentCentral
+- LAN MMORPG Party? :)
+- Game jam? :))
+- Just cancel? :'(
+
+Your choice!
+
