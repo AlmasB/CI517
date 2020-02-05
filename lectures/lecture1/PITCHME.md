@@ -1,6 +1,3 @@
-% Final draft
-
----
 
 ### Lecture 1 - Introduction
 
@@ -16,7 +13,7 @@
 
 - Background: CS, SE and Game Dev
 - Researcher in Automated Diagram Generation
-- Code in [C++, Java, Kotlin & others](https://github.com/AlmasB)
+- Shipped code in [C++, Java, Kotlin & others](https://github.com/AlmasB)
 - Author and maintainer of [FXGL game engine](https://github.com/AlmasB/FXGL)
 - [YouTube game dev channel](https://www.youtube.com/almasb0/videos)
 
@@ -33,37 +30,37 @@
 
 #### Expectations (Year 1)
 
-![minecraft](../../images/minecraft.jpg)
+![minecraft](images/minecraft.jpg)
 
 +++
 
 #### Reality (Year 1)
 
-![minecraft](../../images/pong.png)
+![minecraft](images/pong.png)
 
 ---
 
 #### Expectations (Year 2)
 
-![minecraft](../../images/assassin.jpg)
+![minecraft](images/assassin.jpg)
 
 +++
 
 #### Reality (Year 2)
 
-![minecraft](../../images/platformer.jpg)
+![minecraft](images/platformer.jpg)
 
 ---
 
 #### Expectations (Year 3)
 
-![minecraft](../../images/overwatch.jpg)
+![minecraft](images/overwatch.jpg)
 
 +++
 
 #### Reality (Year 3)
 
-![minecraft](../../images/blocks.png)
+![minecraft](images/blocks.png)
 
 ---
 
