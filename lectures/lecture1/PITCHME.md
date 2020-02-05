@@ -402,4 +402,4 @@ void println(std::string text) {
 
 #### Tutorial
 
-On StudentCentral
+[Tutorial link](tutorials.md)
