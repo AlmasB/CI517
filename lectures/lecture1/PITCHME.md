@@ -402,4 +402,4 @@ void println(std::string text) {
 
 #### Tutorial
 
-[Tutorial link](tutorials.md)
+[Tutorial link](https://github.com/AlmasB/CI517/blob/master/tutorials.md)
