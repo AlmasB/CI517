@@ -178,8 +178,8 @@ Overall, looks _very_ similar to game architecture!
 
 Let's explore existing open-source game engines:
 1. Find a repo on GitHub with game engine source code. For example:
-- [Godot](https://github.com/godotengine/godot)
-- [CRYENGINE](https://github.com/CRYTEK/CRYENGINE)
+[Godot](https://github.com/godotengine/godot),
+[CRYENGINE](https://github.com/CRYTEK/CRYENGINE)
 2. Identify (in their code) their versions of the entry point (start / main)
 
 ---
@@ -251,8 +251,8 @@ Refer to the StudentCentral engine subsystem diagram (in Study Materials).
 
 Let's explore existing open-source game engines:
 1. Find a repo on GitHub with game engine source code. For example:
-- [FXGL](https://github.com/AlmasB/FXGL)
-- [Godot](https://github.com/godotengine/godot)
+[FXGL](https://github.com/AlmasB/FXGL),
+[Godot](https://github.com/godotengine/godot)
 2. Identify (in their code) their versions of "Game World", "Main Loop", "Render" and "Physics Tick/Update".
 
 ---
