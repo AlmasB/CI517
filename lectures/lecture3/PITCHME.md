@@ -1,6 +1,4 @@
-% Final draft
 
----
 
 ### Lecture 3 - Game Engine Architecture
 
@@ -19,7 +17,7 @@
 
 #### Game Architecture
 
-Let's start with something you know, i.e. game arch.
+Let's start with something you know, i.e. game architecture and draw a sequence diagram.
 
 - Start
 - Init
@@ -69,22 +67,21 @@ Let's start with something you know, i.e. game arch.
 
 Many interconnected subsystems, but if well-designed they form a powerful framework.
 
-Image from Game Engine Architecture (get the book from the library!)
+Image from Game Engine Architecture (get the (e)-book from the library!)
 
-![game_engine_arch](../../images/game_engine_arch.png)
+![game_engine_arch](images/game_engine_arch.png)
 
 
 ---
 
 #### Game Engines
 
-- Different view / workflows, 
+- Different engines have different views and workflows
 - Architecture-wise, if we look generally, it is similar
 
 ---
 
 #### Game Engines (Unity Project Structure)
-
 
 ```
 Assets/
@@ -99,7 +96,7 @@ Assets/
 
 #### Unity
 
-![unity](../../images/unity.png)
+![unity](images/unity.png)
 
 ---
 
@@ -119,7 +116,7 @@ Content/
 
 #### Unreal
 
-![ue](../../images/ue.jpg)
+![ue](images/ue.jpg)
 
 ---
 
@@ -141,7 +138,7 @@ Game/
 
 #### Unreal
 
-![godot](../../images/godot.png)
+![godot](images/godot.png)
 
 ---
 
@@ -161,8 +158,7 @@ assets/
 
 #### FXGL
 
-![fxgl](../../images/fxgl.jpg)
-
+![fxgl](images/fxgl.jpg)
 
 ---
 
@@ -181,18 +177,18 @@ Overall, looks _very_ similar to game architecture!
 #### Activity
 
 Let's explore existing open-source game engines:
-1. Find a repo on GitHub with game engine source code
-2. Identify their versions of the entry point (start / main)
-
-For example:
+1. Find a repo on GitHub with game engine source code. For example:
 - [Godot](https://github.com/godotengine/godot)
 - [CRYENGINE](https://github.com/CRYTEK/CRYENGINE)
+2. Identify (in their code) their versions of the entry point (start / main)
 
 ---
 
 #### Engine Subsystems
 
-This is a brief overview, next weeks each will focus on one subsystem in more detail.
+This is a brief overview, next weeks each focus on one subsystem in more detail.
+
+Refer to the StudentCentral engine subsystem diagram (in Study Materials).
 
 ---
 
@@ -254,12 +250,10 @@ This is a brief overview, next weeks each will focus on one subsystem in more de
 #### Activity
 
 Let's explore existing open-source game engines:
-1. Find a repo on GitHub with game engine source code
-2. Identify their versions of "Game World", "Main Loop", "Render" and "Physics Tick".
-
-For example:
+1. Find a repo on GitHub with game engine source code. For example:
 - [FXGL](https://github.com/AlmasB/FXGL)
 - [Godot](https://github.com/godotengine/godot)
+2. Identify (in their code) their versions of "Game World", "Main Loop", "Render" and "Physics Tick/Update".
 
 ---
 
@@ -274,13 +268,13 @@ For example:
 
 - Manage crashes gracefully
 - Provide important data to developers (stacktrace, performance)
-- Attempt to identify what went wrong
+- Attempt to identify what went wrong (PS4 has a powerful system info dump on crash)
 
 ---
 
 #### Networking Subsystem
 
-- Updates, DLC, one-time events, notifications, friends list
+- Updates, DLC, one-time events (e.g. holidays), notifications, friends list
 - Multiplayer
 - Cloud saves
 
@@ -289,14 +283,14 @@ For example:
 #### Maths Subsystem
 
 - Simplify domain code by reusing existing functions
-- Handle combat / gameplay specifics
+- Handle combat (e.g. critical strike) / gameplay specifics (e.g. chance to drop loot on death)
 
 ---
 
 #### Platform Subsystem
 
 - Identify platform specifics (OS, capabilities)
-- Map engine code to appropriate back-end
+- Map engine code to appropriate back-end (similar to SDL2)
 
 ---
 
@@ -309,7 +303,7 @@ For example:
 
 #### Activity
 
-Order and justify the following steps of the main loop:
+Order and justify the following **8** steps of the main loop:
 
 updateAI, checkInput, notifyCollisions, renderGame, handleInput, clearRender, checkCollisions, renderUI.
 

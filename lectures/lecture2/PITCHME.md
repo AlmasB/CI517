@@ -1,6 +1,4 @@
-% Final draft
 
----
 
 ### Lecture 2 - C++ Basics (Cont.)
 
@@ -16,8 +14,6 @@
 #### Last Week Recap
 
 - C++ Basics
-
-Meanwhile, please start loading VS 2017+.
 
 ---
 
@@ -433,4 +429,4 @@ Assignment code: let's check out custom classes.
 
 #### Tutorial
 
-On StudentCentral
+[Tutorial link](https://github.com/AlmasB/CI517/blob/master/tutorials.md)
