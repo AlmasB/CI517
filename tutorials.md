@@ -13,3 +13,17 @@ Note: take breaks at regular intervals between tasks and talk to your peers.
 1. Make a single change (gameplay / UI / input / etc) to the example game. (remaining time)
 
 ---
+
+#### Tutorial 2
+
+Note: take breaks at regular intervals between tasks and talk to your peers.
+
+1. Create a Word (or alternative) document. Add a title page that says "Game Engine Fundamentals: MY_ENGINE_ELEMENT" and replace "MY_ENGINE_ELEMENT" appropriately.
+1. Add a Table of Contents page.
+1. Add another page with a few sentences related to what the chosen engine element will do. For example: "I will extend the xcube2d engine with a particle system. The system will produce visual effects in the form of moving particles...".
+1. Make sure you can build and run the code that is provided as part of the assignment.
+1. Consider the existing code base of the engine to see where your new code might reside.
+1. Start designing (on paper) what the system will look like (visually), how it will work (architecture), what other systems it will communicate with, etc.
+1. By the end of this tutorial, you should have a strong idea of what you are going to do. It is fine if you don't yet know how to implement it.
+
+---
