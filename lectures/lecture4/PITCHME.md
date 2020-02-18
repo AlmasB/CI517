@@ -1,6 +1,3 @@
-% Final draft
-
----
 
 ### Lecture 4 - Application Framework
 

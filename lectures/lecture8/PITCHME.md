@@ -80,7 +80,21 @@ The aim is to make AI controlled entities just smart enough to make them engagin
 
 ---
 
-#### Various AI Behaviour Types
+#### Behaviour Perception
+
+The key property of the behaviour is to be consistent. Inconsistencies lead to player frustration.
+
+---
+
+#### Behaviour Types
+
+- Movement
+- Decision Making (what to do now?)
+- (Group) Strategy (what to do next?)
+
+---
+
+#### Various AI Behaviour Implementation Types
 
 - FSM (Finite State Machine)
 - BTrees (Behaviour Trees)
