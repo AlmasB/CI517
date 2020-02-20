@@ -32,8 +32,8 @@ Note: take breaks at regular intervals between tasks and talk to your peers.
 Note: take breaks at regular intervals between tasks and talk to your peers.
 
 1. (Optional but recommended) Create a fork of xcube2d under your GitHub account. This is where you will be developing your assignment work. Remember to back up, **computer scientists do not lose data!**
-1. Last you started reading a bit of the codebase. Now read through all of the codebase and try to memorise where the major parts, such as the main loop and input, are located.
-1. Start designing (on paper) how the subsystems you designed last week are going to talk to your new subsystem.
+1. Last week you started reading a bit of the codebase. Now read through all of the codebase and try to memorise where the major parts, such as the main loop and input, are located.
+1. Start designing (on paper) how the subsystems you identified last week are going to talk to your new subsystem.
 1. By the end of this tutorial, you should be able to build, run and extend the given code. Add some code to the assignment code base, such as the one shown in the tutorial demonstration, or start a basis for your own engine subsystem.
 
 ---
