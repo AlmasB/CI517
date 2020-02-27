@@ -1,6 +1,3 @@
-% Final draft
-
----
 
 ### Lecture 5 - Entity-Component-System
 
@@ -14,7 +11,7 @@
 
 #### Last Week Recap
 
-- Event systems 
+- Event systems (Kahoot)
 
 ---
 
@@ -43,7 +40,7 @@ Architectural pattern used in many engines and games. Examples:
 
 - **Everything** is an entity
 - Without extra information an entity is like an object without fields and methods
-- The most primitive entity can be represented just as an id of type `int`
+- Essentially, a bag of components
 
 ---
 
@@ -66,7 +63,7 @@ Architectural pattern used in many engines and games. Examples:
 #### ECS - Example Component
 
 ```
-class MoveableComponent extends Component {
+class MoveableComponent : Component {
 
     constructor() {
         x = 0.0;
@@ -82,7 +79,7 @@ class MoveableComponent extends Component {
 
 
 ```
-let entity = new Entity();
+entity = new Entity();
 
 // now entity knows about its position and that it can move
 entity.addComponent(new MoveableComponent());
@@ -111,7 +108,7 @@ A popular variation of ECS. The `System` gets merged with `Component`.
 #### Entity-Component Model (Example)
 
 ```
-class MoveableComponent extends Component {
+class MoveableComponent : Component {
 
     constructor() {
         x = 0.0;
@@ -130,7 +127,7 @@ class MoveableComponent extends Component {
 
 #### ECS - Examples in Game Engines
 
-- Unreal Engine uses Entity-Component (EC) model
+- Unreal Engine uses something similar to Entity-Component (EC) model
 - FXGL also uses EC model
 - Unity is moving from EC to ECS
 
@@ -170,7 +167,7 @@ Every component defines an update:
 
 
 ```
-class MoveableComponent extends Component {
+class MoveableComponent : Component {
 
     constructor(velocity) {
         this.x = 0.0;
@@ -192,45 +189,43 @@ class MoveableComponent extends Component {
 
 
 ```
-let entity = new Entity();
+entity = new Entity();
 entity.addComponent(new MoveableComponent(new Vec2(100, 50)));
 ```
 
 Whenever `update()` is called, `entity` moves.
-Each update is called by the corresponding System,
-but who controls the Systems?
 
 ---
 
 #### ECS - Game World
 
-- Collection of Systems (which are a collection of entities / components)
-- _Can_ be a collection of entities based on its architecture (e.g. Entity Component Control mechanism)
+- _Can_ be a collection of entities based on its architecture
 - Responsible for entity updates and queries
 
 ---
 
 #### ECS - Game World - Activity
 
-Design a (simple) open world, such as the TESV Skyrim world with its associated game objects. Attempt to use the ECS model.
+Design a (simple) open world, such as the TESV Skyrim world with its associated game objects. Use the EC model.
 
-Example: `TreeComponent`.
+Example: `TreeComponent` that will be added to a `tree` entity.
 
 ---
 
 #### ECS - Game World - Explore
 
-Let's consider existing ECS implementation in [FXGL](https://github.com/AlmasB/FXGL).
+Let's consider existing EC implementation in [FXGL](https://github.com/AlmasB/FXGL).
 
 ---
 
 #### Game World - Queries
 
+Example use cases for each?
+
 - By type
-- By layer
 - By position
 - Random
-- etc.
+- By component
 
 ---
 
@@ -253,7 +248,7 @@ Worth watching (but read the above first):
 - ECS - a powerful pattern in game dev
 - Entities - just generic objects
 - Components - add "flavour" to entities
-- Systems - update components
+- Systems - update components but may not be present if using just EC
 - EC is more manageable for small-medium games
 
 ---

@@ -37,3 +37,14 @@ Note: take breaks at regular intervals between tasks and talk to your peers.
 1. By the end of this tutorial, you should be able to build, run and extend the given code. Add some code to the assignment code base, such as the one shown in the tutorial demonstration, or start a basis for your own engine subsystem.
 
 ---
+
+#### Tutorial 4
+
+Note: take breaks at regular intervals between tasks and talk to your peers.
+
+1. Create a class `MyEngineSubsystem` (renaming as needed) inside the game engine code, for example in `XCube2d.h / .cpp`.
+1. Instantiate your newly created system in `TestGame.cpp` and make it do something. For example a simple function that prints `System is initialized` to the terminal should do it.
+1. On paper, design the visual aspect of the game demo that you will develop. This can help you figure out the API for your system.
+1. By the end of this tutorial, you should have some simple (original, i.e. added by you) code that runs with the engine.
+
+---
