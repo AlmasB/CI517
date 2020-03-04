@@ -1,7 +1,3 @@
-% Final draft
-
----
-
 ### Lecture 6 - Physics Subsystem
 
 > "Part 1. Particle Physics" - Ian Millington
@@ -39,7 +35,7 @@
 #### 2D Maths
 
 - Luckily, not very complex
-- Transtive skills from / to UI design
+- Transitive skills from / to UI design
 - Examples to consider: Arx Fatalis, Sony PS3, Valve games
 
 ---
@@ -168,9 +164,15 @@ Changing the rate of change. Only a demo in this lecture, the concepts will be c
 
 ---
 
-#### Acitivity
+#### Activity
 
 Identify which part of the [FXGL](https://github.com/AlmasB/FXGL) code base performs AABB.
+
+---
+
+#### High-level Implementation
+
+Suppose we have `n` entities, how can we implement collision detection for all of them?
 
 ---
 
@@ -183,7 +185,7 @@ Identify which part of the [FXGL](https://github.com/AlmasB/FXGL) code base perf
 
 ---
 
-#### Acitivity
+#### Activity
 
 Identify which part of the [FXGL](https://github.com/AlmasB/FXGL) code base performs SAT.
 
@@ -268,6 +270,6 @@ addHandler(type1, type2, (obj1, obj2) -> {
 
 ---
 
-#### Tutorial
+#### Further Reading
 
-On StudentCentral, Use collision callbacks in your game
+- [Good SAT tutorial](https://gamedevelopment.tutsplus.com/tutorials/collision-detection-using-the-separating-axis-theorem--gamedev-169)
