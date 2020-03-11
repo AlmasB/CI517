@@ -1,6 +1,3 @@
-% Final draft
-
----
 
 ### Lecture 7 - Graphics and Audio subsystems
 
@@ -23,6 +20,7 @@
 #### Last Week Recap
 
 - Physics
+- SPSFA (self-peer-supervisor formative assessment) design
 
 ---
 
@@ -38,6 +36,8 @@
 
 - Immediate
 - Retained
+
+Consider the differences.
 
 --- 
 
@@ -85,20 +85,14 @@ We will consider some of the common ones.
 #### Post-processing
 
 - Bloom, Lens Flare, Vignette
-- Blending
+- Blending: [example](https://twitter.com/AlmasBaim/status/925821412425785344)
 
 --- 
 
 #### RGBA colors and Blending
 
-- Values range
+- Values range: memory implications and multithreaded drawing
 - Alpha opacity / transparency
-
---- 
-
-#### Blending Demo
-
-We consider a range of blending modes.
 
 --- 
 
@@ -144,6 +138,9 @@ Let's implement a simple particle subsystem!
 
 - Given a time value in range `[0..1]`, an interpolator converts it to a progress value `[0..1]`.
 - Essentially, can be represented as a function
+- [Example](https://twitter.com/AlmasBaim/status/946475350342750208)
+
+Let's consider the theory in detail using a simple example.
 
 ---
 
@@ -234,7 +231,7 @@ Using balance and volume of the speakers you can play positional sound.
 
 1. Identify the direction
 2. Compute the distance
-3. What next?
+3. What's next?
 
 ---
 
@@ -242,9 +239,3 @@ Using balance and volume of the speakers you can play positional sound.
 
 - Graphics not complex if you use high-level abstractions
 - Audio is important and not difficult to implement using SDL
-
----
-
-#### Tutorial
-
-On StudentCentral
