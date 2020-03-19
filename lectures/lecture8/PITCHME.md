@@ -1,6 +1,3 @@
-% Final draft
-
----
 
 ### Lecture 8 - AI subsystem
 
@@ -61,7 +58,7 @@ We can now apply existing algorithms to solve our problem.
 #### Apply A*
 
 ```
-let path = A*.apply(graph, startTile, endTile);
+auto path = AStar.apply(graph, startTile, endTile);
 ```
 
 `path` contains a list of tiles, which is the shortest route from `startTile` to `endTile`.
@@ -70,7 +67,7 @@ let path = A*.apply(graph, startTile, endTile);
 
 #### Activity
 
-Examine the provided code base regarding maze generation. How would you solve the problem of finding a path from the start to the end of the maze?
+Suppose we have a maze (for example the one in the assignment code). How would you solve the problem of finding a path from the start to the end of the maze?
 
 ---
 
@@ -106,7 +103,7 @@ The key property of the behaviour is to be consistent. Inconsistencies lead to p
 #### FSM
 
 - Can only be in 1 state at a time
-- Works for most simple AI
+- Works for most simple AI and some complex AI
 
 ---
 
@@ -115,6 +112,7 @@ The key property of the behaviour is to be consistent. Inconsistencies lead to p
 ```
 stateMachine.currentState.update();
 
+// state change
 stateMachine.currentState = State.RUN;
 stateMachine.currentState = State.WALK;
 ```
@@ -125,7 +123,7 @@ Each state has its own `update()` function to implement.
 
 #### Activity
 
-Design and implement a two-state FSM for your player. Examples: walk / fly, run / swim, active / passive.
+Design and implement (on paper) a two-state FSM for your player. Examples: walk / fly, run / swim, active / passive.
 
 ---
 
@@ -157,12 +155,6 @@ root
 
 ---
 
-#### Decorators
-
-They act like if statements and allow adding conditions to actions.
-
----
-
 #### More Complex Example
 
 ```
@@ -186,11 +178,12 @@ Let's examine some example btrees in a [pac-man](https://github.com/AlmasB/FXGLG
 
 ---
 
-#### GOAP (F.E.A.R)
+#### GOAP (F.E.A.R, FF XV)
 
 - Define actions (like BTree) but do not specify order, i.e. dynamic
 - Use game world queries to determine its state
 - Build a chain of actions that will lead AI to the "best" world state for AI
+- [FF XV AI systems video](https://www.youtube.com/watch?v=ygNRNru1B_s)
 
 ---
 
@@ -222,7 +215,7 @@ Postcondition: Ammo in weapon
 
 - AI seem to communicate between units
 - Much more dynamic / non-deterministic experience
-- Squad "center of mass" 
+- Squad "center of mass"
 
 ---
 
@@ -249,7 +242,7 @@ Suppose a squad is being fired at.
 
 1. Think of an existing game, such as Fallout 4 and pick an AI type.
 2. What is the aim of the AI you picked?
-3. Design the AI you picked using the behaviour types above.
+3. Design the AI you picked using one of the behaviour types above.
 
 ---
 
@@ -263,10 +256,5 @@ Suppose a squad is being fired at.
 
 #### Extra Reading
 
-Good explanation of btrees - [gdxAI](https://github.com/libgdx/gdx-ai/wiki/Behavior-Trees)
-
----
-
-#### Tutorial
-
-On StudentCentral
+- Good explanation of btrees - [gdxAI](https://github.com/libgdx/gdx-ai/wiki/Behavior-Trees)
+- Combining Design and AI - [GDC Alien Isolation](https://www.gdcvault.com/play/1021852/Building-Fear-in-Alien)
