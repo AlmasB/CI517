@@ -41,24 +41,24 @@ Note: take breaks at regular intervals between tasks and talk to your peers (on 
 
 Note: take breaks at regular intervals between tasks and talk to your peers (on Teams).
 
-1. Create a class `MyEngineSubsystem` (renaming as needed) inside the game engine code, for example in `XCube2d.h / .cpp`.
-1. Instantiate your newly created system in `TestGame.cpp` and make it do something. For example a simple function that prints `System is initialized` to the terminal should do it.
+1. Create a class in `MyEngineSubsystem.h / .cpp` (from the assignment codebase).
+1. Add a function to the new class to make it do something. For example a simple function that prints `System is initialized` to the terminal should do it.
+1. Instantiate your newly created system in `MyGame.cpp` and call your newly created function. 
 1. On paper, design the visual aspect of the game demo that you will develop. This can help you figure out the API for your system.
 1. By the end of this tutorial, you should have some simple (original, i.e. added by you) code that runs with the engine.
 
 ---
 
-#### Tutorials 5-6-7
+#### Tutorials 5+
 
 Note: take breaks at regular intervals between tasks and talk to your peers (on Teams).
 
-For the next tutorials until the peer assessment session on March 26th, you should:
+From this tutorial onwards, you should focus only on the assignment codebase, in order to complete the coursework. The following tips should help you develop:
 
-1. Continue developing your engine subsystem.
-1. Have a storyboard or similar on paper that helps you visualise your goal, i.e. what the end-result looks like.
-1. Start developing your demo alongside the engine to help you guide the API.
-1. Ask any questions you have as soon as possible.
-
-You should keep working on your engine code during the week. Keep in mind that you are expected to spend some time of independent (that is not including contact hours) study each week.
+1. Have a storyboard or similar on paper that helps you visualise your goal, i.e. what the end-result looks like. Then develop to meet that end-result.
+1. Read the source of existing systems in the codebase -- they will help you structure your own code.
+1. Start developing your demo alongside the engine to help you guide the API of your system.
+1. Ask any questions you have (in the Q&A channel on Teams) as soon as possible to expedite the development.
+1. [CPP reference](https://en.cppreference.com/w/) is a great resource for C++ documentation.
 
 ---
