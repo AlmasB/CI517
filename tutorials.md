@@ -1,9 +1,9 @@
 #### Tutorial 1
 
-Note: take breaks at regular intervals between tasks and talk to your peers (on Teams).
+Note: take breaks at regular intervals between tasks and talk to your peers (in-person or on Teams).
 
 1. Think about / choose your game engine aspect. (15 mins)
-1. Discuss with your peer (on Teams) the game engine aspect you would like to build. (15 mins)
+1. Discuss with your peer (in-person or on Teams) the game engine aspect you would like to build. (15 mins)
 1. On your own (refine) your ideas. (20 mins)
 1. Background research (see what you can find online about your aspect. (15 mins)
 1. Make notes about your research and thoughts into a document and leave this until next week. (20 mins)
@@ -12,7 +12,7 @@ Note: take breaks at regular intervals between tasks and talk to your peers (on 
 
 #### Tutorial 2
 
-Note: take breaks at regular intervals between tasks and talk to your peers (on Teams).
+Note: take breaks at regular intervals between tasks and talk to your peers (in-person or on Teams).
 
 1. Clone and build the assignment code. (15 mins)
 1. Run / play the assignment game example and skim through the code. (15 mins)
@@ -28,7 +28,7 @@ Note: take breaks at regular intervals between tasks and talk to your peers (on 
 
 #### Tutorial 3
 
-Note: take breaks at regular intervals between tasks and talk to your peers (on Teams).
+Note: take breaks at regular intervals between tasks and talk to your peers (in-person or on Teams).
 
 1. (Optional but recommended) Create a fork of xcube2d under your GitHub account. This is where you will be developing your assignment work. Remember to back up, **computer scientists do not lose data!**
 1. Last week you started reading a bit of the codebase. Now read through all of the codebase and consider where the major parts, such as the main loop, graphics drawing and input, are located.
@@ -39,7 +39,7 @@ Note: take breaks at regular intervals between tasks and talk to your peers (on 
 
 #### Tutorial 4
 
-Note: take breaks at regular intervals between tasks and talk to your peers (on Teams).
+Note: take breaks at regular intervals between tasks and talk to your peers (in-person or on Teams).
 
 1. Create a class in `MyEngineSubsystem.h / .cpp` (from the assignment codebase).
 1. Add a function to the new class to make it do something. For example a simple function that prints `System is initialized` to the terminal should do it.
@@ -51,14 +51,14 @@ Note: take breaks at regular intervals between tasks and talk to your peers (on 
 
 #### Tutorials 5+
 
-Note: take breaks at regular intervals between tasks and talk to your peers (on Teams).
+Note: take breaks at regular intervals between tasks and talk to your peers (in-person or on Teams).
 
 From this tutorial onwards, you should focus only on the assignment codebase, in order to complete the coursework. The following tips should help you develop:
 
 1. Have a storyboard or similar on paper that helps you visualise your goal, i.e. what the end-result looks like. Then develop to meet that end-result.
 1. Read the source of existing systems in the codebase -- they will help you structure your own code.
 1. Start developing your demo alongside the engine to help you guide the API of your system.
-1. Ask any questions you have (in the Q&A channel on Teams) as soon as possible to expedite the development.
+1. Ask any questions you have (in-person or on Teams) as soon as possible to expedite the development.
 1. [CPP reference](https://en.cppreference.com/w/) is a great resource for C++ documentation.
 
 ---
